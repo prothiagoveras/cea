@@ -1,0 +1,35 @@
+img {
+    width: 14em;
+    margin-top: 48px;
+    margin-left: 69px;
+}
+ul{
+    text-align: center;
+    margin-top: -2em;
+    margin-left: 11em;
+    
+    
+
+}
+li {
+      padding: 3em;
+      display: inline;
+      width: 10em;
+}
+a{
+    text-decoration: none;
+}
+.barracima{
+    width: 106em;
+    height: 17em;
+    margin-left: -5em;
+    margin-top: -5em;
+    background-color: aquamarine;
+}
+ol {
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: -13em;
+    margin-left: 75em;
+}
