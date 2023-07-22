@@ -1,3 +1,4 @@
+/*Barra de menu */
 img {
     width: 14em;
     margin-top: 48px;
@@ -16,7 +17,7 @@ li {
 }
 a{
     text-decoration: none;
-}
+}    
 .barracima{
     width: 106em;
     height: 17em;
@@ -29,7 +30,7 @@ ol {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: -13em;
-    margin-left: 75em;
+    margin-left: 62em;
 }
 
 .lista {
@@ -38,25 +39,86 @@ ol {
     text-align: justify;
     margin-block-start: 0%;
 }
-.galeria {
-    margin-left: 400px;
-    margin-top: 0%;
+
+
+
+
+
+
+
+
+
+
+/* carrosel */
+.navup{
+    line-height: -130px;
+    max-width: 500px;
+    margin-left: 800px;
+    margin-top: -70rem;
 }
-.barraimg {
-    max-width: 774px;
-    margin-left: 41%;
-    margin-top: -3%;
+.slider{
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 50rem;
 }
+
+.slider input{
+   margin-left: 30px;
+}
+
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 120%;
+    transition: all 500ms ease;
+    
+
+}
+
+.slider-content img{
+    width: 26rem;
+
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+
+
+
+
+
+
+
+/*Barra Lateral*/
 .barralado{
     width: 13%;
     color: #fff;
-    padding-left: 17px;
+    padding-left: 18px;
     height: 158vh;
     background-image: linear-gradient(30deg, #11cf4d, #a8eebe);
+    margin-top: 139px;
+    margin-left: -9px;
     
     
 }
-
 .menulado {
     font-size: 14px;
     display: unset;
@@ -80,13 +142,29 @@ ol {
     background-color: #fff;
     transition: 1s;
 }
+
+
+
+
+
+
+
+
+
+/*Rodapé*/
+.barrabaixo{
+    margin-left: -8px;
+}
 .rodape{
+    position: absolute;
     background-color: #023911;
     color: white;
     height: auto;
     width: 100%;
     font-size: 14px;
     font-family: helvetica;
+    margin-top: -28px;
+    
 }
 .rodape a{
     text-decoration: none;
@@ -120,12 +198,13 @@ ol {
     text-align: center;
 }
 /*mobile*/
-@media (max-width: 768px) {
-    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-        width: calc(50% - 20px);
-        padding: 10px;
-    }
-    .rodape-div{
-        padding: 60px 0px 40px 0px;
-    }
+    @media (max-width: 768px) {
+        .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+            width: calc(50% - 20px);
+            padding: 10px;
+        }
+        .rodape-div{
+            padding: 60px 0px 40px 0px;
+        }
 }
+
